@@ -260,7 +260,7 @@ NoSQL database is non-relational, so it scales out better than relational databa
 ### Types of NoSQL Databases
 
 - Key-value Pair Based (Ex. DynamoDB, Riak, Tokyo Cabinet, Redis Server, Memcached, Scalaris)
-- Column-oriented (Ex. Google BigQuery, Amazon Redshift, Snowflake, BigTable, Cassandra, Hbase, Hypertable)
+- Column-oriented (Ex. Google BigQuery, Amazon Redshift, Snowflake, Bigtable, Cassandra, HBase, Hypertable)
 - Graphs based (Ex. Neo4J, InfoGrid, Infinite Graph, Flock DB, OrientDB)
 - Document-oriented (Ex. MongoDB, CouchDB, OrientDB, RavenDB)
 
