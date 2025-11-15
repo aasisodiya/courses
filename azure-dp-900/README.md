@@ -323,13 +323,13 @@ NoSQL database is non-relational, so it scales out better than relational databa
 
 ## ETL Process
 
-- ETL Stands for Extract Transform and Load
+- ETL Stands for Extract, Transform, and Load
 - ETL is a data pipeline used to collect data from various sources, transform the data according to business rules and load it into a destination data store.
 - ETL Process requires data that is fully processed before being loaded to the target data store.
 
 ## ELT Process
 
-- ELT Stands for Extract Load and Transform
+- ELT Stands for Extract, Load, and Transform
 - The CRM System (Data is Extracted)
 - The Data Warehouse (Data is Loaded)
 - An in-memory data integration tool (Data is transformed)
@@ -883,7 +883,7 @@ The following tools are the main command-line tools.
 
 ### Key Features of Azure Synapse Analytics
 
-1. The Massively Parallel Processing (MPP) Engine of Azure Synapse Analytics distributes processing across compute nodes.
+1. **Massively Parallel Processing (MPP) Engine**: Distributes processing across compute nodes.
 2. **Data Warehousing**: A massively parallel processing (MPP) architecture supports petabyte-scale data warehousing.
 3. **Serverless and Dedicated Options**: Offers serverless SQL pools for on-demand queries and dedicated SQL pools for predictable workloads.
 4. **Data Integration**: Seamless integration with Azure Data Lake, Power BI, Azure Machine Learning, and other Azure services.
