@@ -20,7 +20,7 @@ Data is a collection of facts (numbers, descriptions, observations used in decis
 
 - Structured Data (Tabular Data, ex. Datawarehouse, ERP,CRM)
 - Semi Structured Data (Structured is not fixed, Ex CSV, XML, JSON)
-- Unsctructured Data (No Structure, ex. Audio, Video, Binary Data Files)
+- Unstructured Data (No Structure, ex. Audio, Video, Binary Data Files)
 
 ## Structured Data
 
@@ -75,7 +75,7 @@ While these three roles often work together in data-driven organizations, they h
 
 - **Focus:** Building and maintaining the infrastructure and pipelines that support data science and analytics.
 - **Skills:** Programming (Python, Java, Scala), database management (SQL, NoSQL), cloud platforms (AWS, GCP, Azure), and data warehousing.
-- **Tasks:** Designing data pipelines, ETL processes, and data warehouses, and ensuring data quality and security, data cleansing routines, preparing data. They develop, constructs, tests & maintain complete architecture.
+- **Tasks:** Designing data pipelines, ETL processes, and data warehouses, and ensuring data quality and security, data cleansing routines, preparing data. They develop, construct, test & maintain complete architecture.
 
 ### Database Administrator (DBA)
 
@@ -95,7 +95,7 @@ While these three roles often work together in data-driven organizations, they h
     - Data Type is not forced consistent (ex. number field, email field)
 - Extensible Markup Language (XML)
   - Uses tags enclosed in angle brackets (<.../>) to define elements and attributes
-- Javascript Object Notation (JSON)
+- JavaScript Object Notation (JSON)
   - Alternative for XML
 - Binary Large Object (BLOB)
   - Stored as binary data (1's or 0's)
@@ -117,7 +117,7 @@ While these three roles often work together in data-driven organizations, they h
 - Header describes the structure of data in the record
 - Header is stored in JSON
 - Application uses the info in header to parse the binary data and extract the fields it contains
-- Good format for compressing data and minimizing storage and networkbandwidth requirements
+- Good format for compressing data and minimizing storage and network bandwidth requirements
 - Can't read data without using avro tools
 
 ## ORC
@@ -179,7 +179,7 @@ While these three roles often work together in data-driven organizations, they h
 | Processing Performance Limit                        | No Limit, Pause/Resume compute              |
 | Heavy writes, moderate reads                        | heavy read, low write workloads             |
 | A retail point of sale (POS) system, banking system | Data warehouse, business intelligence tools |
-| Normalized                                          | DeNormalized for Faster Query               |
+| Normalized                                          | Denormalized for Faster Query               |
 
 ## ACID vs BASE
 
@@ -260,7 +260,7 @@ NoSQL database is non-relational, so it scales out better than relational databa
 ### Types of NoSQL Databases
 
 - Key-value Pair Based (Ex. DynamoDB, Riak, Tokyo Cabinet, Redis Server, Memcached, Scalaris)
-- Column-oriented Graph (Ex. Google BigQuery, Amazon Redshift, Snowflake, BigTable, Cassandra, Hbase, Hypertable)
+- Column-oriented (Ex. Google BigQuery, Amazon Redshift, Snowflake, BigTable, Cassandra, Hbase, Hypertable)
 - Graphs based (Ex. Neo4J, InfoGrid, Infinite Graph, Flock DB, OrientDB)
 - Document-oriented (Ex. MongoDB, CouchDB, OrientDB, RavenDB)
 
@@ -323,13 +323,13 @@ NoSQL database is non-relational, so it scales out better than relational databa
 
 ## ETL Process
 
-- ETL Stands for Extract Transform and Load
+- ETL Stands for Extract, Transform, and Load
 - ETL is a data pipeline used to collect data from various sources, transform the data according to business rules and load it into a destination data store.
 - ETL Process requires data that is fully processed before being loaded to the target data store.
 
 ## ELT Process
 
-- ETL Stands for Extract Load and Transform
+- ELT Stands for Extract, Load, and Transform
 - The CRM System (Data is Extracted)
 - The Data Warehouse (Data is Loaded)
 - An in-memory data integration tool (Data is transformed)
@@ -429,7 +429,7 @@ NoSQL database is non-relational, so it scales out better than relational databa
 
 | Fact Table                                                                 | Dimension Table                                                                                      |
 | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Fact table contains the measuring of the attributes of a dimension table.  | Dimension table contains the attributes on that truth table calculates the metric.                   |
+| Fact table contains quantitative measures (facts) of a business process.   | Dimension table contains descriptive attributes that provide context for the facts.                  |
 | In fact table, There is less attributes than dimension table.              | While in dimension table, There is more attributes than fact table.                                  |
 | In fact table, There is more records than dimension table.                 | While in dimension table, There is less records than fact table.                                     |
 | Fact table forms a vertical table.                                         | While dimension table forms a horizontal table.                                                      |
@@ -650,7 +650,7 @@ Real time processing deals with streams of data that are captured in real-time a
 - When provisioning an Azure Cosmos DB account, you need to specify which type of API you will use.
 - Azure Cosmos DB supports multi-region writes
 - The API determines the type of account to create. Azure Cosmos DB provides five APIs: Core (SQL) and MongoDB for document data, Gremlin for graph data, Azure Table, and Cassandra. Currently, you must create a separate account for each API.
-- Azure Cosmos DB uses partitioning to scale individual containers in a database to meet the performance needs of your application. In partitioning, the items in a container are divided into distinct subsets called logical partitions. Logical partitions are formed based on the value of a partition key that is associated with each item in a container.
+- Azure Cosmos DB uses partitioning to scale individual containers in a database to meet the performance needs of your application. In partitioning, the items in a container are divided into distinct subsets called logical partitions.
 - Logical partitions are formed based on the value of a partition key that is associated with each item in a container.
 
 ## Azure Cosmos DB API
@@ -771,7 +771,7 @@ By understanding the differences between ACLs and RBAC, you can choose the appro
 ## Azure Table storage
 
 - Azure Table storage is a powerful and versatile NoSQL data store that offers a flexible, scalable, and cost-effective solution for storing large amounts of structured data.
-- It's well-suited for a wide range of applications, making it a valuable tool in the Azure ecosystem.\
+- It's well-suited for a wide range of applications, making it a valuable tool in the Azure ecosystem.
 - Doesn't supports a multi-master model
 - To store data by using Azure Table storage, First create an Azure storage account, then use Table service in the Azure portal to create a table.
 - Note: An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables.
@@ -883,12 +883,12 @@ The following tools are the main command-line tools.
 
 ### Key Features of Azure Synapse Analytics
 
-1. The Massively Parallel Processing (MPP) Engine of Azure Synapse Analytics distributes processing across compute nodes
-1. **Data Warehousing**: A massively parallel processing (MPP) architecture supports petabyte-scale data warehousing.
-1. **Serverless and Dedicated Options**: Offers serverless SQL pools for on-demand queries and dedicated SQL pools for predictable workloads.
-1. **Data Integration**: Seamless integration with Azure Data Lake, Power BI, Azure Machine Learning, and other Azure services.
-1. **Unified Analytics**: Combines data integration, data exploration, and data visualization into a single platform.
-1. **Use Cases**:
+1. **Massively Parallel Processing (MPP) Engine**: Distributes processing across compute nodes.
+2. **Data Warehousing**: A massively parallel processing (MPP) architecture supports petabyte-scale data warehousing.
+3. **Serverless and Dedicated Options**: Offers serverless SQL pools for on-demand queries and dedicated SQL pools for predictable workloads.
+4. **Data Integration**: Seamless integration with Azure Data Lake, Power BI, Azure Machine Learning, and other Azure services.
+5. **Unified Analytics**: Combines data integration, data exploration, and data visualization into a single platform.
+6. **Use Cases**:
    - Enterprise data warehouses
    - Real-time analytics and reporting
    - Data lakehouse implementation
@@ -1041,7 +1041,6 @@ Azure offers a variety of networking services to help you build secure, scalable
 - [Azure Cosmos DB API Services](https://medium.com/codex/azure-cosmos-db-api-services-dc14a4cafd2c)
 - [NoSQL Tutorial: What is, Types of NoSQL Databases & Example](https://www.guru99.com/nosql-tutorial.html)
 - [Youtube Dumps](https://www.youtube.com/watch?v=wi3PkLK_gNc)
-- [Dumps](https://free-braindumps.com/microsoft/free-dp-900-braindumps.html?p=3)
 - [Dumps](https://www.itexams.com/exam/DP-900?)
 - [Dumps](https://www.dumpsbase.com/freedumps/updated-microsoft-azure-data-fundamentals-dp-900-dumps-for-good-preparation.html)
 - [Data Store](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview)
