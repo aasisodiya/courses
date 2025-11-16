@@ -22,18 +22,19 @@
 | `%sql`                   | allows you to run SQL queries                            |
 | `%who`                   | lists all the variables in the current scope             |
 
-- You can use `?` to see documentation of any magic command. For example : `%config?`
-- You can use `??` to see code of any magic command. For example : `%config??`
+- You can use `?` to see documentation of any magic command. For example: `%config?`
+- You can use `??` to see code of any magic command. For example: `%config??`
 
 ## Databricks Utilities
 
-- credentials
-- data
-- fs
-- jobs
-- library
-- meta
-- notebook
-- secrets
-- widgets
-- preview
+The following utilities are available via the `dbutils` object:
+
+- `dbutils.credentials`
+- `dbutils.data`
+- `dbutils.fs`
+- `dbutils.jobs`
+- `dbutils.library`
+- `dbutils.notebook`
+- `dbutils.secrets`
+- `dbutils.widgets`
+- `dbutils.preview`
